@@ -8,7 +8,9 @@ public class GuessinTools {
     private char[][] showUser =  {{'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}};
 
 
+    public void generateField(){
 
+    }
 
     public void showField(){
     for (int i = 0; i < 4; i++){
