@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="guessing and generating working">
+    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="fix of guess">
       <change beforePath="$PROJECT_DIR$/src/GuessinTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessinTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666085019299</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix of guess">
+      <created>1666088268904</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666088268904</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +189,8 @@
     <MESSAGE value="-" />
     <MESSAGE value="guess in class" />
     <MESSAGE value="guessing Logic added" />
-    <option name="LAST_COMMIT_MESSAGE" value="guessing Logic added" />
+    <MESSAGE value="fix of guess" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix of guess" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
-
 public class GuessinTools {
 
     public GuessinTools() {
@@ -12,7 +10,7 @@ public class GuessinTools {
     private char[][] guessingField = new char[4][4];
 
     // generate hidden fields
-    public void hiddenField(){
+    public void generateHiddenField(){
         for (int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
                 int random = (int) Math.floor(Math.random() * listOfOptions.size());
@@ -23,7 +21,7 @@ public class GuessinTools {
     }
 
     // show player fields
-    public void showField(){
+    public void showPlayingField(){
     for (int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
             System.out.print(showUser[i][j] + " ");
@@ -32,7 +30,7 @@ public class GuessinTools {
         }
     }
 
-    public void showPlayingField(){
+    public void showHiddenField(){
         for (int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
                 System.out.print(guessingField[i][j] + " ");

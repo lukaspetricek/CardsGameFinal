@@ -28,7 +28,7 @@ public class Main {
 //        System.out.println("#   #   #   #");
 
         //Show board to user
-        play.hiddenField();
+        play.generateHiddenField();
         play.showPlayingField();
 
 
@@ -42,5 +42,7 @@ public class Main {
         play.guess(pos1, pos2, pos3, pos4);
 
         System.out.println();
+
+        play.showPlayingField();
     }
 }
