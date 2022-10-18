@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+
 public class GuessinTools {
 
     public GuessinTools() {
@@ -44,7 +45,8 @@ public class GuessinTools {
 
     public void guess(int pos1, int pos2, int pos3, int pos4) throws InterruptedException {
 
-        if (pos1 == pos3 && pos2 == pos4) {
+    if((pos1 < 4) && (pos2 < 4) && (pos3 < 4) && (pos4 < 4)) {
+        if ((pos1 == pos3 && pos2 == pos4)) {
             System.out.println("Enter different card coordinates!");
             System.out.println();
 
@@ -69,6 +71,9 @@ public class GuessinTools {
             showUser[pos3][pos4] = '#';
             showPlayingField();
         }
+    } else {
+        System.out.println("Enter valid numbers!");
+    }
     }
     public boolean alreadyWon(){
         return counter == 7;
@@ -81,5 +86,6 @@ public class GuessinTools {
     public static void setCounter(int counter) {
         GuessinTools.counter = counter;
     }
+
 }
 
