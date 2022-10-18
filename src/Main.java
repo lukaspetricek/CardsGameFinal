@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         GuessinTools play = new GuessinTools();
@@ -28,7 +26,6 @@ public class Main {
 //        System.out.println("#   #   #   #");
 //        System.out.println("#   #   #   #");
 //        System.out.println("#   #   #   #");
-
 
 
         //Show board to user
