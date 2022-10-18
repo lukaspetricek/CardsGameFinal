@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         GuessinTools play = new GuessinTools();
+        Scanner scanner = new Scanner(System.in);
+        int pos1, pos2, pos3, pos4;
+
 ///If you are doing a console-based version, use numbers instead of the usual cards or objects, and a board like:
 //# # # #
 //# # # #
@@ -22,14 +27,20 @@ public class Main {
 //        System.out.println("#   #   #   #");
 //        System.out.println("#   #   #   #");
 
-//        System.out.println("Array[0] +   Array[1] + Array[2] + Array[3]");
-//        System.out.println("#   #   #   #");
-//        System.out.println("#   #   #   #");
-//        System.out.println("#   #   #   #");
-
-
         //Show board to user
-        play.generateField();
+        play.hiddenField();
         play.showPlayingField();
+
+
+        //get user input
+        System.out.println("Enter coordinates od card A: ");
+        pos1 = scanner.nextInt();
+        pos2 = scanner.nextInt();
+        System.out.println("Enter coordinates od card B: ");
+        pos3 = scanner.nextInt();
+        pos4 = scanner.nextInt();
+        play.guess(pos1, pos2, pos3, pos4);
+
+        System.out.println();
     }
 }
