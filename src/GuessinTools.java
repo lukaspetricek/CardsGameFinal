@@ -53,6 +53,14 @@ public class GuessinTools {
         }
 
         }
+    public boolean alreadyWon(){
+        if (counter == 7){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
+}
 
 
