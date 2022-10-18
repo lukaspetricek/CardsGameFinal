@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="zadání update">
-      <change afterPath="$PROJECT_DIR$/src/GuessinTools.java" afterDir="false" />
+    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="zas update">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666077837648</updated>
-      <workItem from="1666077840796" duration="1988000" />
+      <workItem from="1666077840796" duration="2442000" />
     </task>
     <task id="LOCAL-00001" summary="Card guessing game!">
       <created>1666078017561</created>
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666079586070</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="zas update">
+      <created>1666079848564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666079848564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +102,7 @@
     <MESSAGE value="Card guessing game!" />
     <MESSAGE value="-" />
     <MESSAGE value="zadání update" />
-    <option name="LAST_COMMIT_MESSAGE" value="zadání update" />
+    <MESSAGE value="zas update" />
+    <option name="LAST_COMMIT_MESSAGE" value="zas update" />
   </component>
 </project>

@@ -17,10 +17,15 @@ public class Main {
         // když ne opakujeme dokud se vše neuhádne, uhádnutí končí, když zbývá poslední dvojice na nalezení.
         // je možnost počítat, kolik kol to trvalo
 
-        System.out.println("#   #   #   #");
-        System.out.println("#   #   #   #");
-        System.out.println("#   #   #   #");
-        System.out.println("#   #   #   #");
+//        System.out.println("Array[0][0] +  Array[0][1]  + Array[0][2] +  Array[0][3]");
+//        System.out.println("#   #   #   #");
+//        System.out.println("#   #   #   #");
+//        System.out.println("#   #   #   #");
+
+//        System.out.println("Array[0] +   Array[1] + Array[2] + Array[3]");
+//        System.out.println("#   #   #   #");
+//        System.out.println("#   #   #   #");
+//        System.out.println("#   #   #   #");
 
 
 
