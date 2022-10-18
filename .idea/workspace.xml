@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="guess in class">
+    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="guessing Logic added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GuessinTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessinTools.java" afterDir="false" />
     </list>
@@ -113,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666084301774</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="guessing Logic added">
+      <created>1666085019299</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666085019299</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +155,8 @@
     <MESSAGE value="update visual" />
     <MESSAGE value="-" />
     <MESSAGE value="guess in class" />
-    <option name="LAST_COMMIT_MESSAGE" value="guess in class" />
+    <MESSAGE value="guessing Logic added" />
+    <option name="LAST_COMMIT_MESSAGE" value="guessing Logic added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

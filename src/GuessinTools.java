@@ -10,9 +10,15 @@ public class GuessinTools {
     private char[][] guessingField = new char[4][4];
 
     public void generateField(){
-
+        for (int i = 0; i < 4; i++){
+            for(int j = 0; j < 4; j++){
+                int random = (int) Math.floor(Math.random() * listOfOptions.size());
+                guessingField[i][j] = listOfOptions.get(random);
+                listOfOptions.remove(random);
+            }
+            System.out.println();
     }
-
+    }
     public void showField(){
     for (int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
@@ -21,6 +27,15 @@ public class GuessinTools {
         System.out.println();
     }
 }
+
+    public void showPlayingField(){
+        for (int i = 0; i < 4; i++){
+            for(int j = 0; j < 4; j++){
+                System.out.print(guessingField[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
     public void guess(int pos1, int pos2, int pos3, int pos4){
         if(guessingField[pos1][pos2] == guessingField[pos3][pos4]){
             guessingField[pos1][pos2] = showUser[pos1][pos2];
@@ -33,7 +48,8 @@ public class GuessinTools {
             System.out.println("Incorrect!");
             counter++;
         }
+
+        }
     }
 
 
-}
