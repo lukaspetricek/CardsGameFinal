@@ -30,7 +30,7 @@ public class Main {
 
         //Show board to user
         play.showField();
-        play.guess(1,1);
+        play.guess(1,1,2,2);
         System.out.println();
         play.showField();
     }
