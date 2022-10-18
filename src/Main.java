@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         GuessinTools play = new GuessinTools();
         Scanner scanner = new Scanner(System.in);
         int pos1, pos2, pos3, pos4;

@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
+
 public class GuessinTools {
 
     public GuessinTools() {
@@ -40,7 +42,7 @@ public class GuessinTools {
     }
 
 
-    public void guess(int pos1, int pos2, int pos3, int pos4){
+    public void guess(int pos1, int pos2, int pos3, int pos4) throws InterruptedException {
 
         if (pos1 == pos3 && pos2 == pos4) {
             System.out.println("Enter different card coordinates!");
@@ -61,11 +63,13 @@ public class GuessinTools {
             showUser[pos1][pos2] = guessingField[pos1][pos2];
             showUser[pos3][pos4] = guessingField[pos3][pos4];
             showPlayingField();
+            TimeUnit.SECONDS.sleep(5);
+            System.out.println();
             showUser[pos1][pos2] = '#';
             showUser[pos3][pos4] = '#';
-
+            showPlayingField();
         }
-        }
+    }
     public boolean alreadyWon(){
         return counter == 7;
     }
