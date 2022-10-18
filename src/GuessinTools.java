@@ -42,23 +42,18 @@ public class GuessinTools {
     // Je potřeba ošetřit aby uživatel nezádaával stejné hodnoty pořád dokola a tím nevyhrál automaticky
     public void guess(int pos1, int pos2, int pos3, int pos4){
 
-        if(guessingField[pos1][pos2] == guessingField[pos3][pos4] && pos1 != pos3 && pos2 != pos4){
-
+        if (pos1 == pos3 && pos2 == pos4) {
+            System.out.println("Enter different card coordinates!");
+            System.out.println();
+        } else if (guessingField[pos1][pos2] == guessingField[pos3][pos4]) {
             showUser[pos1][pos2] = guessingField[pos1][pos2];
             showUser[pos3][pos4] = guessingField[pos3][pos4];
 
             System.out.println("Correct!");
             counter++;
-        }
-        else if(pos1 == pos3 && pos2 == pos4){
-
-            System.out.println();
-            System.out.println("Enter different card coordinates!");
-
         } else {
             System.out.println("Inccorect!");
         }
-
         }
     public boolean alreadyWon(){
         if (counter == 7){
@@ -68,7 +63,5 @@ public class GuessinTools {
             return false;
         }
     }
-
 }
-
 

@@ -27,31 +27,32 @@ public class Main {
 //        System.out.println("#   #   #   #");
 //        System.out.println("#   #   #   #");
 
+        play.generateHiddenField();
+
         //Show board to user
-//        while(!play.alreadyWon()){
-//            // Ukázat hrací pole
-//            // Zeptat se na řádek a pozici v řádku
+        while(!play.alreadyWon()){
+            play.showPlayingField();
+
+            play.showHiddenField();
+            //get user input
+            System.out.print("Enter coordinates od card A (1-4), (1-4): ");
+            pos1 = scanner.nextInt();
+            scanner.nextLine();
+            pos2 = scanner.nextInt();
+            scanner.nextLine();
+            System.out.print("Enter coordinates od card B (1-4), (1-4): ");
+            pos3 = scanner.nextInt();
+            scanner.nextLine();
+            pos4 = scanner.nextInt();
+            scanner.nextLine();
+            play.guess(pos1, pos2, pos3, pos4);
+
 //            // zhodnotit zda true nebo false
 //            // opakovat dokud není counter 7
 //            // jakmile je alreadyWon true
-//            // skočit ven napsat že hele vyhrals a ukázat celé hrací pole odhalné
-//        }
+        }
 
-        play.generateHiddenField();
-        play.showPlayingField();
-
-
-        //get user input
-        System.out.println("Enter coordinates od card A: ");
-        pos1 = scanner.nextInt();
-        pos2 = scanner.nextInt();
-        System.out.println("Enter coordinates od card B: ");
-        pos3 = scanner.nextInt();
-        pos4 = scanner.nextInt();
-        play.guess(pos1, pos2, pos3, pos4);
-
-        System.out.println();
-
-        play.showPlayingField();
+        System.out.println("You have won!");
+        play.showHiddenField();
     }
 }
