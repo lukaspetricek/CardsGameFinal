@@ -39,29 +39,43 @@ public class GuessinTools {
         }
     }
 
-    // Je potřeba ošetřit aby uživatel nezádaával stejné hodnoty pořád dokola a tím nevyhrál automaticky
+
     public void guess(int pos1, int pos2, int pos3, int pos4){
 
         if (pos1 == pos3 && pos2 == pos4) {
             System.out.println("Enter different card coordinates!");
             System.out.println();
+
+            showPlayingField();
         } else if (guessingField[pos1][pos2] == guessingField[pos3][pos4]) {
             showUser[pos1][pos2] = guessingField[pos1][pos2];
             showUser[pos3][pos4] = guessingField[pos3][pos4];
 
             System.out.println("Correct!");
             counter++;
+
+            showPlayingField();
         } else {
             System.out.println("Inccorect!");
+            System.out.println();
+            showUser[pos1][pos2] = guessingField[pos1][pos2];
+            showUser[pos3][pos4] = guessingField[pos3][pos4];
+            showPlayingField();
+            showUser[pos1][pos2] = '#';
+            showUser[pos3][pos4] = '#';
+
         }
         }
     public boolean alreadyWon(){
-        if (counter == 7){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return counter == 7;
+    }
+
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        GuessinTools.counter = counter;
     }
 }
 

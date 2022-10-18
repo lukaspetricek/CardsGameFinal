@@ -5,54 +5,48 @@ public class Main {
         GuessinTools play = new GuessinTools();
         Scanner scanner = new Scanner(System.in);
         int pos1, pos2, pos3, pos4;
-
-///If you are doing a console-based version, use numbers instead of the usual cards or objects, and a board like:
-//# # # #
-//# # # #
-//# # # #
-//# # # #
-//The user enters two pairs of coordinates, to turn two “cards”. If the “cards” are equal they will stay faced up.
-//If not, they should be turned again to be hidden.
-
-
-        // Připravit ArrayList, ve kterém  budou možnosti pro seznam
-        // Pak přiravit Array o specifické délce, do kterého napustíme věci z Arraylistu
-        // Pak vytvoříme Array, kterje se zobrazí lidem při hře.
-        //  Když se uhádne pozice v schovanem Arrayi, tak se přepíšoe záznam do Arraye pro hráče
-        // když ne opakujeme dokud se vše neuhádne, uhádnutí končí, když zbývá poslední dvojice na nalezení.
-        // je možnost počítat, kolik kol to trvalo
-
-//        System.out.println("Array[0][0] +  Array[0][1]  + Array[0][2] +  Array[0][3]");
-//        System.out.println("#   #   #   #");
-//        System.out.println("#   #   #   #");
-//        System.out.println("#   #   #   #");
+        boolean flag = true;
+        boolean playAgain = true;
 
         play.generateHiddenField();
+    while(playAgain){
 
-        //Show board to user
+        //Show board to user only the first time
         while(!play.alreadyWon()){
-            play.showPlayingField();
-
-            play.showHiddenField();
+            if(flag){
+                play.showPlayingField();
+                flag = false;
+            }
             //get user input
             System.out.print("Enter coordinates od card A (1-4), (1-4): ");
-            pos1 = scanner.nextInt();
+            pos1 = scanner.nextInt() - 1;
             scanner.nextLine();
-            pos2 = scanner.nextInt();
+            pos2 = scanner.nextInt() - 1;
             scanner.nextLine();
             System.out.print("Enter coordinates od card B (1-4), (1-4): ");
-            pos3 = scanner.nextInt();
+            pos3 = scanner.nextInt() - 1;
             scanner.nextLine();
-            pos4 = scanner.nextInt();
+            pos4 = scanner.nextInt() - 1;
             scanner.nextLine();
             play.guess(pos1, pos2, pos3, pos4);
-
-//            // zhodnotit zda true nebo false
-//            // opakovat dokud není counter 7
-//            // jakmile je alreadyWon true
         }
-
+        //If user wins show whole field and ask for playing Again.
         System.out.println("You have won!");
         play.showHiddenField();
+        System.out.println();
+        System.out.println();
+
+        System.out.print("Do you wanna play again?: [Y/N]");
+        String userDecide = scanner.nextLine();
+        if(userDecide.equalsIgnoreCase("N") || userDecide.equalsIgnoreCase("No")){
+            System.out.println("K thx bye!");
+            playAgain = false;
+        } else {
+            play.setCounter(0);
+            flag = true;
+        }
+
+    }
+        System.out.println("Thanks for playing!");
     }
 }
