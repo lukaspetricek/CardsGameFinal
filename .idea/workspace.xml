@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="fix of guess">
+    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="preparation for playing field">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GuessinTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessinTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666088268904</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="win condition added">
+      <created>1666089339688</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666089339688</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +200,9 @@
     <MESSAGE value="guess in class" />
     <MESSAGE value="guessing Logic added" />
     <MESSAGE value="fix of guess" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix of guess" />
+    <MESSAGE value="win condition added" />
+    <MESSAGE value="preparation for playing field" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparation for playing field" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

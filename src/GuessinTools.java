@@ -9,7 +9,7 @@ public class GuessinTools {
     private char[][] showUser =  {{'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}};
     private char[][] guessingField = new char[4][4];
 
-    // generate hidden fields
+    // Generuje hrací pole, které neukazujeme hráči
     public void generateHiddenField(){
         for (int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
@@ -20,7 +20,7 @@ public class GuessinTools {
         }
     }
 
-    // show player fields
+    // Ukazuje herní pole, které je skryté a hráč vidí
     public void showPlayingField(){
     for (int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
@@ -29,7 +29,7 @@ public class GuessinTools {
         System.out.println();
         }
     }
-
+    // Ukazuje skryté herní pole, které hráč ne
     public void showHiddenField(){
         for (int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
@@ -38,18 +38,25 @@ public class GuessinTools {
             System.out.println();
         }
     }
+
+    // Je potřeba ošetřit aby uživatel nezádaával stejné hodnoty pořád dokola a tím nevyhrál automaticky
     public void guess(int pos1, int pos2, int pos3, int pos4){
 
-        if(guessingField[pos1][pos2] == guessingField[pos3][pos4]){
+        if(guessingField[pos1][pos2] == guessingField[pos3][pos4] && pos1 != pos3 && pos2 != pos4){
+
             showUser[pos1][pos2] = guessingField[pos1][pos2];
             showUser[pos3][pos4] = guessingField[pos3][pos4];
 
             System.out.println("Correct!");
             counter++;
         }
-        else {
-            System.out.println("Incorrect!");
-            counter++;
+        else if(pos1 == pos3 && pos2 == pos4){
+
+            System.out.println();
+            System.out.println("Enter different card coordinates!");
+
+        } else {
+            System.out.println("Inccorect!");
         }
 
         }
@@ -61,6 +68,7 @@ public class GuessinTools {
             return false;
         }
     }
+
 }
 
 

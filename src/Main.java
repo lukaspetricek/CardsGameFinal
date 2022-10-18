@@ -28,6 +28,15 @@ public class Main {
 //        System.out.println("#   #   #   #");
 
         //Show board to user
+//        while(!play.alreadyWon()){
+//            // Ukázat hrací pole
+//            // Zeptat se na řádek a pozici v řádku
+//            // zhodnotit zda true nebo false
+//            // opakovat dokud není counter 7
+//            // jakmile je alreadyWon true
+//            // skočit ven napsat že hele vyhrals a ukázat celé hrací pole odhalné
+//        }
+
         play.generateHiddenField();
         play.showPlayingField();
 
