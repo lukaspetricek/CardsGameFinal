@@ -9,6 +9,7 @@ public class GuessinTools {
 
 
 
+
     public void showField(){
     for (int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
@@ -20,5 +21,6 @@ public class GuessinTools {
     public void guess(int pos1, int pos2){
         showUser[pos1-1][pos2-1] = '9';
     }
+
 
 }
