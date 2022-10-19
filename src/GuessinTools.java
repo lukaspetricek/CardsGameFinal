@@ -7,15 +7,16 @@ public class GuessinTools {
 
     public GuessinTools() {
     }
+
     public static int counter = 0;
-    private ArrayList<Character> listOfOptions = new ArrayList<>(Arrays.asList('1','2','3','4','1','2','3','4','5','6','7','8','5','6','7','8'));
-    private char[][] showUser =  {{'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}};
+    private ArrayList<Character> listOfOptions = new ArrayList<>(Arrays.asList('1', '2', '3', '4', '1', '2', '3', '4', '5', '6', '7', '8', '5', '6', '7', '8'));
+    private char[][] showUser = {{'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}};
     private char[][] guessingField = new char[4][4];
 
     // Generuje hrací pole, které neukazujeme hráči
-    public void generateHiddenField(){
-        for (int i = 0; i < 4; i++){
-            for(int j = 0; j < 4; j++){
+    public void generateHiddenField() {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 int random = (int) Math.floor(Math.random() * listOfOptions.size());
                 guessingField[i][j] = listOfOptions.get(random);
                 listOfOptions.remove(random);
@@ -24,68 +25,73 @@ public class GuessinTools {
     }
 
     // Ukazuje herní pole, které je skryté a hráč vidí
-    public void showPlayingField(){
-    for (int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            System.out.print(showUser[i][j] + " ");
-        }
-        System.out.println();
+    public void showPlayingField() {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(showUser[i][j] + " ");
+            }
+            System.out.println();
         }
     }
+
     // Ukazuje skryté herní pole, které hráč ne
-    public void showHiddenField(){
-        for (int i = 0; i < 4; i++){
-            for(int j = 0; j < 4; j++){
+    public void showHiddenField() {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 System.out.print(guessingField[i][j] + " ");
             }
             System.out.println();
         }
     }
 
+        public void guess ( int pos1, int pos2, int pos3, int pos4) throws InterruptedException {
 
-    public void guess(int pos1, int pos2, int pos3, int pos4) throws InterruptedException {
+            if (guessingField[pos1][pos2] != '#' && guessingField[pos3][pos4] != '#') {
+                if ((pos1 < 4) && (pos2 < 4) && (pos3 < 4) && (pos4 < 4)) {
+                    if ((pos1 == pos3 && pos2 == pos4)) {
+                        System.out.println("Enter different card coordinates!");
+                        System.out.println();
 
-    if((pos1 < 4) && (pos2 < 4) && (pos3 < 4) && (pos4 < 4)) {
-        if ((pos1 == pos3 && pos2 == pos4)) {
-            System.out.println("Enter different card coordinates!");
-            System.out.println();
+                        showPlayingField();
+                    } else if (guessingField[pos1][pos2] == guessingField[pos3][pos4]) {
+                        showUser[pos1][pos2] = guessingField[pos1][pos2];
+                        showUser[pos3][pos4] = guessingField[pos3][pos4];
+                        guessingField[pos3][pos4] = '#';
+                        guessingField[pos1][pos2] = '#';
 
-            showPlayingField();
-        } else if (guessingField[pos1][pos2] == guessingField[pos3][pos4]) {
-            showUser[pos1][pos2] = guessingField[pos1][pos2];
-            showUser[pos3][pos4] = guessingField[pos3][pos4];
+                        System.out.println("Correct!");
+                        counter++;
 
-            System.out.println("Correct!");
-            counter++;
-
-            showPlayingField();
-        } else {
-            System.out.println("Inccorect!");
-            System.out.println();
-            showUser[pos1][pos2] = guessingField[pos1][pos2];
-            showUser[pos3][pos4] = guessingField[pos3][pos4];
-            showPlayingField();
-            TimeUnit.SECONDS.sleep(5);
-            System.out.println();
-            showUser[pos1][pos2] = '#';
-            showUser[pos3][pos4] = '#';
-            showPlayingField();
+                        showPlayingField();
+                    } else {
+                        System.out.println("Inccorect!");
+                        System.out.println();
+                        showUser[pos1][pos2] = guessingField[pos1][pos2];
+                        showUser[pos3][pos4] = guessingField[pos3][pos4];
+                        showPlayingField();
+                        TimeUnit.SECONDS.sleep(5);
+                        System.out.println();
+                        showUser[pos1][pos2] = '#';
+                        showUser[pos3][pos4] = '#';
+                        showPlayingField();
+                    }
+                } else {
+                    System.out.println("Enter valid numbers!");
+                }
+            } else {
+                System.out.println("You have already guessed this combination!");
+            }
         }
-    } else {
-        System.out.println("Enter valid numbers!");
-    }
-    }
+// Logika zda user Vyhrál
     public boolean alreadyWon(){
-        return counter == 7;
-    }
+        return counter == (4*2) - 1;
+        }
 
     public static int getCounter() {
         return counter;
-    }
+        }
 
     public static void setCounter(int counter) {
         GuessinTools.counter = counter;
-    }
-
+        }
 }
-
