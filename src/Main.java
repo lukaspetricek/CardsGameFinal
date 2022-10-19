@@ -72,17 +72,17 @@ public class Main {
 
         //If user wins show whole field and ask for playing Again.
         System.out.println("You have won!");
-        play.showHiddenField();
-        System.out.println();
         System.out.println();
 
         System.out.print("Do you wanna play again?: [Y/N]");
-        String userDecide = scanner.nextLine();
+        String userDecide = scanner.next();
+
         if(userDecide.equalsIgnoreCase("N") || userDecide.equalsIgnoreCase("No")){
             System.out.println("K thx bye!");
             playAgain = false;
         } else {
             play.setCounter(0);
+            play.generateHiddenField();
             flag = true;
         }
 
