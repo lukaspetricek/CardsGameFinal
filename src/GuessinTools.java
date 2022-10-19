@@ -34,7 +34,7 @@ public class GuessinTools {
         }
     }
 
-    // Ukazuje skryté herní pole, které hráč ne
+    // Ukazuje skryté herní pole, které hráč nevidi
     public void showHiddenField() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -82,6 +82,7 @@ public class GuessinTools {
                 System.out.println("You have already guessed this combination!");
             }
         }
+
 // Logika zda user Vyhrál
     public boolean alreadyWon(){
         return counter == (4*2) - 1;

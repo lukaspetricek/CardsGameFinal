@@ -69,6 +69,7 @@ public class Main {
 
             play.guess(pos1, pos2, pos3, pos4);
         }
+
         //If user wins show whole field and ask for playing Again.
         System.out.println("You have won!");
         play.showHiddenField();
