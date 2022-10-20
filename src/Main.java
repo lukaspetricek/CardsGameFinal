@@ -7,8 +7,8 @@ public class Main {
         boolean flag = true;
         boolean playAgain = true;
         play.generateHiddenField();
-        play.showPlayingField();
         play.showHiddenField();
+        play.showPlayingField();
 
         while (playAgain) {
             while (!play.alreadyWon()) {
