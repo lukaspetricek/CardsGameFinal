@@ -106,7 +106,7 @@ public class GuessinTools {
                 showUser[i][j] = '#';
                 System.out.print(showUser[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println("\n");
         }
     }
 }

@@ -7,8 +7,8 @@ public class Main {
         boolean flag = true;
         boolean playAgain = true;
         play.generateHiddenField();
-// cheat sheet for testing
 
+// cheat sheet for testing
         play.showHiddenField();
         play.showPlayingField();
 
@@ -149,10 +149,9 @@ public class Main {
             }
 
         //If user wins show whole field and ask for playing Again.
-        System.out.println("You have won!");
-        System.out.println();
+        System.out.println("You have won!\n");
 
-        System.out.print("Do you wanna play again y/n?");
+        System.out.print("Do you wanna play again y/n? ");
         String userDecide = scanner.next();
 
         if (userDecide.equalsIgnoreCase("N") || userDecide.equalsIgnoreCase("No")) {
