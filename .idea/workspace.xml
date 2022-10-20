@@ -9,8 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="handled input, need more testing, clearing duplicated ifs in GT class">
-      <change beforePath="$PROJECT_DIR$/src/GuessinTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessinTools.java" afterDir="false" />
+    <list default="true" id="393e27eb-76e7-4d42-a0e2-844c2fba893a" name="Changes" comment="handled input, need more testing, clearing duplicated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666248742165</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="handled input, need more testing, clearing duplicated">
+      <created>1666249134163</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666249134163</updated>
+    </task>
+    <task id="LOCAL-00020" summary="handled input, need more testing, clearing duplicated">
+      <created>1666249352443</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666249352443</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +285,8 @@
     <MESSAGE value="working version" />
     <MESSAGE value="working version / not new game" />
     <MESSAGE value="handled input, need more testing, clearing duplicated ifs in GT class" />
-    <option name="LAST_COMMIT_MESSAGE" value="handled input, need more testing, clearing duplicated ifs in GT class" />
+    <MESSAGE value="handled input, need more testing, clearing duplicated" />
+    <option name="LAST_COMMIT_MESSAGE" value="handled input, need more testing, clearing duplicated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

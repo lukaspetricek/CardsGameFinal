@@ -26,7 +26,7 @@ public class Main {
                             try {
                                 userInput = Integer.parseInt(userChoice.nextLine());
                             } catch (NumberFormatException e) {
-                                System.out.println("Enter only valid choice (1-4)!");
+                                System.out.println("Invalid input. Valid values are 1-4!");
                                 valid = false;
                             }
                         } while (!valid);
@@ -58,7 +58,7 @@ public class Main {
                         try {
                             userInput = Integer.parseInt(userChoice.nextLine());
                         } catch (NumberFormatException e) {
-                            System.out.println("Enter only valid choice (1-4)!");
+                            System.out.println("Invalid input. Valid values are 1-4!");
                             valid = false;
                         }
                     } while (!valid);
@@ -90,7 +90,7 @@ public class Main {
                         try {
                             userInput = Integer.parseInt(userChoice.nextLine());
                         } catch (NumberFormatException e) {
-                            System.out.println("Enter only valid choice (1-4)!");
+                            System.out.println("Invalid input. Valid values are 1-4!");
                             valid = false;
                         }
                     } while (!valid);
@@ -122,7 +122,7 @@ public class Main {
                         try {
                             userInput = Integer.parseInt(userChoice.nextLine());
                         } catch (NumberFormatException e) {
-                            System.out.println("Enter only valid choice (1-4)!");
+                            System.out.println("Invalid input. Valid values are 1-4!");
                             valid = false;
                         }
                     } while (!valid);
@@ -152,7 +152,7 @@ public class Main {
         System.out.println("You have won!");
         System.out.println();
 
-        System.out.print("Do you wanna play again?: [Y/N]");
+        System.out.print("Do you wanna play again y/n?");
         String userDecide = scanner.next();
 
         if (userDecide.equalsIgnoreCase("N") || userDecide.equalsIgnoreCase("No")) {
