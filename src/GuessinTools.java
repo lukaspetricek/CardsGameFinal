@@ -105,7 +105,7 @@ public class GuessinTools {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 showUser[i][j] = '#';
-                System.out.print(showUser[i][j]);
+                System.out.print(showUser[i][j] + " ");
             }
             System.out.println("");
         }
