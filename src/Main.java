@@ -37,22 +37,15 @@ public class Main {
                         } while (!valid);
                         switch (userInput) {
                             case 1:
-                                System.out.println("1");
                                 n = 2;
                                 break;
-
                             case 2:
-                                System.out.println("2");
                                 n = 2;
                                 break;
-
                             case 3:
-                                System.out.println("3");
                                 n = 2;
                                 break;
-
                             case 4:
-                                System.out.println("4");
                                 n = 2;
                                 break;
                             default:
@@ -76,22 +69,15 @@ public class Main {
                     } while (!valid);
                     switch (userInput) {
                         case 1:
-                            System.out.println("1");
                             n = 2;
                             break;
-
                         case 2:
-                            System.out.println("2");
                             n = 2;
                             break;
-
                         case 3:
-                            System.out.println("3");
                             n = 2;
                             break;
-
                         case 4:
-                            System.out.println("4");
                             n = 2;
                             break;
                         default:
@@ -115,22 +101,15 @@ public class Main {
                     } while (!valid);
                     switch (userInput) {
                         case 1:
-                            System.out.println("1");
                             n = 2;
                             break;
-
                         case 2:
-                            System.out.println("2");
                             n = 2;
                             break;
-
                         case 3:
-                            System.out.println("3");
                             n = 2;
                             break;
-
                         case 4:
-                            System.out.println("4");
                             n = 2;
                             break;
                         default:
@@ -154,22 +133,15 @@ public class Main {
                     } while (!valid);
                     switch (userInput) {
                         case 1:
-                            System.out.println("1");
                             n = 2;
                             break;
-
                         case 2:
-                            System.out.println("2");
                             n = 2;
                             break;
-
                         case 3:
-                            System.out.println("3");
                             n = 2;
                             break;
-
                         case 4:
-                            System.out.println("4");
                             n = 2;
                             break;
                         default:
