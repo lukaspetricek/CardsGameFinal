@@ -7,18 +7,13 @@ public class Main {
         boolean flag = true;
         boolean playAgain = true;
         play.generateHiddenField();
+// cheat sheet for testing
+
         play.showHiddenField();
         play.showPlayingField();
 
         while (playAgain) {
             while (!play.alreadyWon()) {
-// show board to user only the first time
-//                if (flag) {
-//                    play.showPlayingField();
-//                    flag = false;
-//                }
-// cheat sheet to play faster / 2do delete
-                //play.showHiddenField();
 
 // get user input validation by brute force :-D
             System.out.println("Enter row 1-4 of card A.");
