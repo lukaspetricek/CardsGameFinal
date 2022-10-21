@@ -9,7 +9,7 @@ public class Main {
         play.generateHiddenField();
 
 // cheat sheet for testing
-        play.showHiddenField();
+//      play.showHiddenField();
         play.showPlayingField();
 
         while (playAgain) {
