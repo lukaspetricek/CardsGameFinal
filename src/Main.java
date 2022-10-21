@@ -148,7 +148,7 @@ public class Main {
                 play.guess(pos1, pos2, pos3, pos4);
             }
 
-        //If user wins show whole field and ask for playing Again.
+        // if user wins show question for playing again
         System.out.println("You have won!\n");
 
         System.out.print("Do you wanna play again y/n? ");

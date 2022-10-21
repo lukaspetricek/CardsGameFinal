@@ -13,7 +13,7 @@ public class GuessinTools {
     private char[][] showUser = {{'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}};
     private char[][] guessingField = new char[4][4];
 
-    // Generuje hrací pole, které neukazujeme hráči
+    // generate hidden field
     public void generateHiddenField() {
         ArrayList<Character> listOfOptions = new ArrayList<>(Arrays.asList('1', '2', '3', '4', '1', '2', '3', '4', '5', '6', '7', '8', '5', '6', '7', '8'));
         char[][] showUser = {{'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}, {'#', '#', '#', '#'}};
@@ -26,7 +26,7 @@ public class GuessinTools {
         }
     }
 
-    // Ukazuje herní pole, které je skryté a hráč vidí
+    // show playing field to user
     public void showPlayingField() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -36,7 +36,7 @@ public class GuessinTools {
         }
     }
 
-    // Ukazuje skryté herní pole, které hráč nevidi
+    // show hidden field for cheat
     public void showHiddenField() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -46,6 +46,7 @@ public class GuessinTools {
         }
     }
 
+    // guessing logic
     public void guess(int pos1, int pos2, int pos3, int pos4) throws InterruptedException {
         if (guessingField[pos1][pos2] != '#' && guessingField[pos3][pos4] != '#') {
             if ((pos1 == pos3 && pos2 == pos4)) {
@@ -77,7 +78,7 @@ public class GuessinTools {
         }
     }
 
-    // Logika zda user Vyhrál
+    // player won?
     public boolean alreadyWon() {
         return counter == 8;
     }
